@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopier Perfumes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 40px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        header span:nth-child(1) {
+            color: red;
+        }
+        header span:nth-child(2) {
+            color: orange;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .item {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .item img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .item h2 {
+            color: orange;
+            margin: 15px 0 5px;
+        }
+
+        .item p {
+            color: black;
+            font-size: 0.9rem;
+        }
+
+        .price {
+            color: orange;
+            font-weight: bold;
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .add {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: orange;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        .add:hover {
+            opacity: 0.9;
+        }
+
+        .icon {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="flex:1; font-size:2rem; font-weight:bold;">
+            <span style="color:red;">Shop</span><span style="color:orange;">ier</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:20px; font-size:1.1rem;">
+            <span style="font-size:1.5rem; cursor:pointer;">👜</span> Market
+            <span style="font-size:1.5rem; cursor:pointer;">🛒</span>
+        </div>
+    </header>
+
+    <div style="display:flex; justify-content:space-between; align-items:center; padding:0 40px; margin-top:-20px;">
+        <div style="display:flex; gap:15px;">
+            <button style="padding:8px 16px; border:none; background:orange; color:white; border-radius:6px; cursor:pointer;">ALL</button>
+            <button style="padding:8px 16px; border:none; background:#eee; color:black; border-radius:6px; cursor:pointer;">Men's Perfumes</button>
+            <button style="padding:8px 16px; border:none; background:#eee; color:black; border-radius:6px; cursor:pointer;">Women's Perfumes</button>
+            <button style="padding:8px 16px; border:none; background:#eee; color:black; border-radius:6px; cursor:pointer;">Children's Perfumes</button>
+        </div>
+
+        <input type="text" placeholder="Search products..." style="padding:10px 15px; width:250px; border-radius:8px; border:1px solid #ccc;">
+    </div>
+
+    <div class="container">
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f" alt="Perfume 1" />
+            <h2>Royal Mist</h2>
+            <p>Long-lasting, smooth, premium fragrance with a classy finish.</p>
+            <div class="price">RWF 35,000</div>
+            <button class="add"><span class="icon">🛒</span>Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad" alt="Perfume 2" />
+            <h2>Golden Aura</h2>
+            <p>Warm, sweet scent with a signature luxury golden touch.</p>
+            <div class="price">RWF 42,000</div>
+            <button class="add"><span class="icon">🛒</span>Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1511283474054-2a26c974b86a" alt="Perfume 3" />
+            <h2>Velvet Bloom</h2>
+            <p>Soft floral notes that stay fresh all day with elegance.</p>
+            <div class="price">RWF 38,000</div>
+            <button class="add"><span class="icon">🛒</span>Add to Cart</button>
+        </div>
+
+    </div>
+</body>
+</html>
